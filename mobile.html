@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+  margin: 0;
+  height: 100vh;
+  background-color: #212223;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+}
+
+.text {
+  position: absolute;
+  place-self: center;
+  color: #fff;
+  font-size: 2.5rem;
+  padding-block: 6px;
+  padding-inline: 20px;
+  border-block: 3px solid #0fbaff;
+  text-transform: capitalize;
+  background-color: rgba(55,55,55,.5);
+  backdrop-filter: blur(4px);
+}
+
+.square {
+  position: absolute;
+  bottom: -100px;
+  background-color: #4f64d7;
+  animation: boxes 8s infinite ease-out;
+}
+
+.square:nth-child(1) {
+  width: 75px;
+  height: 75px;
+  left: 7%;
+  animation-duration: 6800ms;
+}
+.square:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  left: 22%;
+  animation-delay: 280ms;
+  animation-duration: 9.8s;
+}
+
+.square:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  left: 39%;
+  animation-delay: 405ms;
+  animation-duration: 11s;
+}
+.square:nth-child(4) {
+  width: 33px;
+  height: 33px;
+  left: 49%;
+  animation-delay: 855ms;
+  animation-duration: 15s;
+}
+
+.square:nth-child(5) {
+  width: 95px;
+  height: 95px;
+  left: 59%;
+  animation-delay: 803ms;
+  animation-duration: 7654ms;
+}
+.square:nth-child(6) {
+  width: 21px;
+  height: 21px;
+  left: 68%;
+  animation-delay: 1203ms;
+  animation-duration: 9999ms;
+}
+.square:nth-child(7) {
+  width: 61px;
+  height: 61px;
+  left: 79%;
+  animation-delay: 103ms;
+  animation-duration: 7600ms;
+}
+.square:nth-child(8) {
+  width: 19px;
+  height: 19px;
+  left: 73%;
+  animation-delay: 143ms;
+  animation-duration: 12500ms;
+}
+
+.square:nth-child(9) {
+  width: 56px;
+  height: 56px;
+  left: 92%;
+  animation-delay: 1105ms;
+  animation-duration: 10050ms;
+}
+
+.square:nth-child(10) {
+  width: 8px;
+  height: 8px;
+  left: 11%;
+  animation-delay: 925ms;
+  animation-duration: 15000ms;
+}
+
+@keyframes boxes {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 100%;
+    background-color: #b0f;
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="text" onclick="window.open('pc.html')">
+        page is Under construction...<br>
+        visit pc version site
+        </div>
+      </div>
+</body>
+</html>
